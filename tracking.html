@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Shipment | Decco Express</title>
+
+  <link rel="stylesheet" href="tracking.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar">
+
+    <div class="logo">
+      <span class="decco">Decco</span>
+      <span class="express">Express</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Support</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- TRACKING SECTION -->
+
+  <section class="tracking-container">
+
+    <div class="tracking-card">
+
+      <h1>Track Your Shipment</h1>
+
+      <p>
+        Enter your tracking number below
+        to view shipment status.
+      </p>
+
+      <div class="tracking-input">
+
+        <input
+          type="text"
+          id="trackingNumber"
+          placeholder="Enter Tracking Number"
+        >
+
+        <button onclick="trackShipment()">
+          Track Package
+        </button>
+
+      </div>
+
+      <!-- RESULT -->
+
+      <div class="result-box" id="resultBox">
+
+        <h2>Shipment Information</h2>
+
+        <div class="info">
+
+          <div>
+            <span>Status</span>
+            <strong id="status">
+              In Transit
+            </strong>
+          </div>
+
+          <div>
+            <span>Tracking ID</span>
+            <strong id="trackingId">
+              DX483920
+            </strong>
+          </div>
+
+          <div>
+            <span>Origin</span>
+            <strong id="origin">
+              New York, USA
+            </strong>
+          </div>
+
+          <div>
+            <span>Destination</span>
+            <strong id="destination">
+              Lagos, Nigeria
+            </strong>
+          </div>
+
+          <div>
+            <span>Estimated Delivery</span>
+            <strong id="delivery">
+              12 Jun 2026
+            </strong>
+          </div>
+
+        </div>
+
+        <!-- TIMELINE -->
+
+        <div class="timeline">
+
+          <div class="timeline-item active">
+            Package Received
+          </div>
+
+          <div class="timeline-item active">
+            Cleared For Transit
+          </div>
+
+          <div class="timeline-item active">
+            Arrived At Sorting Facility
+          </div>
+
+          <div class="timeline-item">
+            Out For Delivery
+          </div>
+
+          <div class="timeline-item">
+            Delivered
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="tracking.js"></script>
+
+</body>
+</html>
