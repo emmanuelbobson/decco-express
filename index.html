@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Decco Express</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <span class="decco">Decco</span>
+        <span class="express">Express</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Tracking</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <button class="nav-btn">Sign In</button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Fast & Reliable Worldwide Delivery</h1>
+        <p>
+          Ship packages across the world with speed,
+          safety and real-time tracking.
+        </p>
+
+        <div class="tracking-box">
+          <input type="text" id="trackingInput" placeholder="Enter Tracking Number">
+          <button onclick="trackPackage()">Track</button>
+        </div>
+
+        <p id="trackingResult"></p>
+      </div>
+    </section>
+  </header>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <h2>Our Services</h2>
+
+    <div class="service-grid">
+
+      <div class="card">
+        <h3>Express Shipping</h3>
+        <p>Fast international and local deliveries.</p>
+      </div>
+
+      <div class="card">
+        <h3>Package Tracking</h3>
+        <p>Track shipments in real time anywhere.</p>
+      </div>
+
+      <div class="card">
+        <h3>Freight Services</h3>
+        <p>Heavy cargo and logistics management.</p>
+      </div>
+
+      <div class="card">
+        <h3>Warehousing</h3>
+        <p>Secure package storage and handling.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="about-text">
+      <h2>Why Choose Decco Express?</h2>
+      <p>
+        We provide reliable logistics and shipping
+        solutions for businesses and individuals.
+        Our advanced tracking system ensures your
+        package is always visible.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Decco Express. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
